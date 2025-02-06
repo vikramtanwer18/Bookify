@@ -6,7 +6,6 @@ function Home(){
     const firebase = useFirebase()
     return(
         <div>
-            
             Home
             <div>
                 <button onClick={()=>firebase.signoutUser()}>Sign out</button>
