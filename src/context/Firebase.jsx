@@ -6,12 +6,12 @@ import { useNavigate } from "react-router-dom";
 const FirebaseContext = createContext(null)
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAOlgm3XEIK1IZdFvv6aJ5Edsgs8f4jmIc",
-    authDomain: "my-bookify-8c591.firebaseapp.com",
-    projectId: "my-bookify-8c591",
-    storageBucket: "my-bookify-8c591.firebasestorage.app",
-    messagingSenderId: "308955904414",
-    appId: "1:308955904414:web:481e359e75116386d7be8f"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGE_ID,
+    appId: process.env.FIREBASE_APP_ID
   };
 
 export const firebaseApp = initializeApp(firebaseConfig)
