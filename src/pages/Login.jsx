@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from "react-router-dom";
+
+import "./Login.css";
+
 function Login(){
  const navigate = useNavigate()
  const[email,setEmail] = useState('')
@@ -26,28 +29,29 @@ function Login(){
  },[firebase,navigate])
  
     return(
-        <div className="container mt-5 ">
-      <Form onSubmit={loginUser}>
+      // value={email} onChange={(e)=>setEmail(e.target.value)}
+      // value={password} onChange={(e)=>setPassword(e.target.value)}
+      // <button type="submit" className="btn"onClick={()=>firebase.loginWithGoogle()} >Login with Google </button>
+       
+      <form onSubmit={loginUser}>
      
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email"  value={email} onChange={(e)=>setEmail(e.target.value)} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" value={password} placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-       Login
-      </Button>
-    </Form>
-    <div className="container mt-5 ">
-    <Button variant="primary" onClick={()=>firebase.loginWithGoogle()} type="submit">
-       Login with Google
-      </Button>
-      </div>
-    </div>
+        <div className="login-container">
+        <h2>Login</h2> 
+        <form>
+        <div className="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            </div>
+            <div className="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required  value={password} onChange={(e)=>setPassword(e.target.value)}/>
+            </div>
+            <Button type="submit" className="login-btn">login</Button>          
+            <Button type="submit" className="login-btn" onClick={()=>firebase.loginWithGoogle()} >Login with Google </Button>
+        </form> 
+       </div>
+    </form>
+    
     )
 }
 export default Login
