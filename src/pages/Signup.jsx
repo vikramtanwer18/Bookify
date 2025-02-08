@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 
 function Signup(){
-    const navigate = useNavigate()
+ const navigate = useNavigate()
  const[email,setEmail] = useState('')
  const[password,setPassword] = useState('')
  const firebase = useFirebase()
@@ -50,10 +50,7 @@ function Signup(){
             <p class="signup-link"><b>Already have an account? <a href="/login">Login here</a></b></p>
         </form> 
        </div>
-
-    </Form>
-  
-
+     </Form>
     )
 }
 export default Signup
