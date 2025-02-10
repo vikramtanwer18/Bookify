@@ -1,6 +1,9 @@
 
 import './App.css'
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 import { Route, Routes } from 'react-router-dom';
 import Signup from './pages/Signup';
 import Login from './pages/Login';

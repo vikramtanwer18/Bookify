@@ -1,0 +1,38 @@
+
+.carousel {
+    max-width: 80%;  /* Adjust carousel width */
+    margin: 20px auto; /* Center carousel */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel img {
+    height: 400px;  /* Set image height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for controls */
+    border-radius: 50%; /* Circular buttons */
+    padding: 10px; /* Button size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust button width */
+}
+
+
+.footer-style {
+    position: fixed;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%; 
+    background-color: black;  
+    color: white; 
+    text-align: center;  
+    padding: 10px; 
+    font-size: 16px;  
+}
