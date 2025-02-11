@@ -1,13 +1,21 @@
 
+    .scrolling {
+        height: 100vh; 
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        scroll-behavior: smooth;
+    }
+    
+
 .carousel {
-    max-width: 80%;  /* Adjust carousel width */
+    max-width: 100%;  /* Adjust carousel width */
     margin: 20px auto; /* Center carousel */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Hide overflow */
 }
 
 .carousel img {
-    height: 400px;  /* Set image height */
+    height: 300px;  /* Set image height */
     object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
 }
@@ -25,7 +33,7 @@
 }
 
 
-.footer-style {
+/* .footer-style {
     position: fixed;  
     bottom: 0;  
     left: 0;  
@@ -35,4 +43,60 @@
     text-align: center;  
     padding: 10px; 
     font-size: 16px;  
+} */
+
+.card-container {
+    display: flex;
+    /* justify-content: center;  */
+    gap: 20px; 
+    flex-wrap: wrap;
 }
+.card{
+    background-color:pink;
+    width:330px;
+    /* overflow: scroll; */
+    /* flex-wrap: wrap; */
+    display: grid;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.students {
+    font-size: 14px;
+    background: white;
+    padding: 5px 10px; 
+    border-radius: 20px;
+    font-weight: bold;
+    
+    /* text-align: right; */
+}
+.content{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.content-btn{
+    background:#4facfe;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+.content-btn:hover {
+    background: blue;
+  }
+
+ 
+  

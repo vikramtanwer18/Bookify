@@ -60,7 +60,7 @@
 }
 
 .signuup-btn:hover {
-    background: #00c6ff;
+    background: blue;
 }
 
 .signup-link {
@@ -76,6 +76,7 @@
 
 .signup-link a:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 
