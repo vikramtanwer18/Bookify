@@ -47,7 +47,7 @@ function Signup(){
             </div>
             <Button type="submit" className="signuup-btn">Signup</Button>          
             {/* <Button type="submit" className="signup-btn" onClick={()=>firebase.loginWithGoogle()} >Login with Google </Button> */}
-            <p class="signup-link"><b>Already have an account? <a href="/login">Login here</a></b></p>
+            <p className="signup-link"><b>Already have an account? <a href="/login">Login here</a></b></p>
         </form> 
        </div>
      </Form>

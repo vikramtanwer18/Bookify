@@ -10,7 +10,6 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import MyNavbar from './components/Navbar';
 import ListPage from './pages/List'
-import TestPage from './pages/Test';
 function App() {
  
 
