@@ -12,7 +12,8 @@ function MyNavbar(){
             <Nav.Link href="/book/listing">Add Books</Nav.Link>
             
              <Nav.Link href="/login">login/Register</Nav.Link>
-
+              
+             <Nav.Link href="/test">Tests</Nav.Link> 
           </Nav>
         </Container>
       </Navbar>
