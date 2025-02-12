@@ -1,0 +1,132 @@
+/* Main Test Container */
+.test-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.marks {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+.timer {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.language-select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Question Section */
+.question-box {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-weight: bold;
+}
+
+/* Answer Options */
+.options {
+    margin-top: 15px;
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+/* Right Section - Question Navigation */
+.navigation-panel {
+    background: #eaf4ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.question-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.nav-button.active {
+    background: red;
+    color: white;
+}
+
+
+.instruction-btn,.submit-btn,.next-btn,.pre-btn{
+    background:#4facfe;
+    font-weight: bold;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+.instruction-btn:hover{
+    background-color: blue;
+}
+.submit-btn:hover{
+    background-color: blue;
+}
+.next-btn:hover{
+    background-color: blue;
+}
+.pre-btn:hover{
+    background-color: blue;
+}
