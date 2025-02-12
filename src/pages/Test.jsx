@@ -13,8 +13,7 @@ function TestPage(){
             <div>
             <div>{question?.question}</div> 
             <div>{1}.{question?.correct_answer}</div>     
-            {
-              
+            { 
               question?.incorrect_answers?.map((data,index)=>{
                   return(
                       <> 
@@ -23,8 +22,8 @@ function TestPage(){
                   )
                   })
          }
-        </div>
-          <div>
+            </div>
+            <div>
             {
               
                 Data.results.map((data,index)=>{
@@ -36,7 +35,7 @@ function TestPage(){
                     })
            }
            </div>
-        </div>
+            </div>
         </div>
     )
 }
