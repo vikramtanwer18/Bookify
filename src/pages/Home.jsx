@@ -81,7 +81,8 @@ function Home() {
                       <button type="submit" className="content-btn"> Go To Test Series </button>
                  </div>
             </div>
-            <div className="footer-style">footer part come</div>
+            <h1>fgfdgfgfdgfdgffdfdhbfdhfgfdfd</h1>
+            {/* <div className="footer-style">footer part come</div> */}
 </div>
     );
 }

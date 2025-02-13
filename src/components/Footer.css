@@ -1,0 +1,101 @@
+/* Ensure Footer is Fixed at Bottom */
+.footer-style {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 5vh;
+}
+
+/* Use Flexbox for Horizontal Alignment */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Even spacing between sections */
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Footer Sections (About, Links, Contact) */
+.footer-section,
+.footer-links,
+.footer-contact {
+    flex: 1; /* Equal space for all sections */
+    text-align: center;
+}
+
+/* Quick Links */
+.footer-somelinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-somelinks li {
+    margin-bottom: 5px;
+}
+
+.footer-somelinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-somelinks a:hover {
+    color: #ffcc00;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* .footer-privacy {
+    margin-top: 10px;
+    padding:  10px;
+} */
+
+.footer-privacy a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-privacy a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section,
+    .footer-links,
+    .footer-contact {
+        margin-bottom: 10px;
+    }
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}

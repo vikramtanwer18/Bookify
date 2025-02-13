@@ -1,0 +1,28 @@
+/* Ensure Full Height for the Page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox Layout to Push Footer to the Bottom */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Main content expands to push footer down */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer Stays at Bottom */
+.footer-style {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
